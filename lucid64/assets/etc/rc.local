@@ -6,4 +6,5 @@ if [ ! -e /root/firstboot_done ]; then
     fi
     touch /root/firstboot_done
 fi
+/usr/bin/docker -d -g /var/vcap/images
 exit 0
